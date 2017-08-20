@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5158CF3E-0025-4D29-87CD-7CFCD0DA1F8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Law_Manegment</RootNamespace>
+    <AssemblyName>Law_Manegment</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\CLS_ADMINS.cs" />
+    <Compile Include="BL\CLS_CASE.cs" />
+    <Compile Include="BL\CLS_COURTS.cs" />
+    <Compile Include="BL\CLS_CUSTOMER.cs" />
+    <Compile Include="BL\CLS_EXP.cs" />
+    <Compile Include="BL\CLS_LOGINS.cs" />
+    <Compile Include="BL\CLS_NATIONALITY.cs" />
+    <Compile Include="BL\CLS_PAID_CREDIT.cs" />
+    <Compile Include="BL\CLS_POLICE.cs" />
+    <Compile Include="BL\CLS_SEFAT.cs" />
+    <Compile Include="BL\CLS_SELECT_COURT.cs" />
+    <Compile Include="BL\CLS_SELECT_CUSTOMER.cs" />
+    <Compile Include="BL\CLS_SELECT_TAWKEL.cs" />
+    <Compile Include="BL\CLS_TAKELTYPE.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\FRM_ADMINS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ADMINS.Designer.cs">
+      <DependentUpon>FRM_ADMINS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ADMINS_TRACKING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ADMINS_TRACKING.Designer.cs">
+      <DependentUpon>FRM_ADMINS_TRACKING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_CASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_CASE.Designer.cs">
+      <DependentUpon>FRM_CASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_COURTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_COURTS.Designer.cs">
+      <DependentUpon>FRM_COURTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_CUSTOMER.Designer.cs">
+      <DependentUpon>FRM_CUSTOMER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_EXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_EXP.Designer.cs">
+      <DependentUpon>FRM_EXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_EXP_LEDGER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_EXP_LEDGER.Designer.cs">
+      <DependentUpon>FRM_EXP_LEDGER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_EXP_REVUN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_EXP_REVUN.Designer.cs">
+      <DependentUpon>FRM_EXP_REVUN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_LOGINS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_LOGINS.Designer.cs">
+      <DependentUpon>FRM_LOGINS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_MAIN.Designer.cs">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_NATIONALITY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_NATIONALITY.Designer.cs">
+      <DependentUpon>FRM_NATIONALITY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_PAID_CREDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_PAID_CREDIT.Designer.cs">
+      <DependentUpon>FRM_PAID_CREDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_POLICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_POLICE.Designer.cs">
+      <DependentUpon>FRM_POLICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_SEFAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SEFAT.Designer.cs">
+      <DependentUpon>FRM_SEFAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_SELECT_COURT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SELECT_COURT.Designer.cs">
+      <DependentUpon>FRM_SELECT_COURT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_SELECT_CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SELECT_CUSTOMER.Designer.cs">
+      <DependentUpon>FRM_SELECT_CUSTOMER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_SELECT_TAWKEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SELECT_TAWKEL.Designer.cs">
+      <DependentUpon>FRM_SELECT_TAWKEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_TAWKELTYPE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_TAWKELTYPE.Designer.cs">
+      <DependentUpon>FRM_TAWKELTYPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\FRM_ADMINS.resx">
+      <DependentUpon>FRM_ADMINS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ADMINS_TRACKING.resx">
+      <DependentUpon>FRM_ADMINS_TRACKING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_CASE.resx">
+      <DependentUpon>FRM_CASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_COURTS.resx">
+      <DependentUpon>FRM_COURTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_CUSTOMER.resx">
+      <DependentUpon>FRM_CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_EXP.resx">
+      <DependentUpon>FRM_EXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_EXP_LEDGER.resx">
+      <DependentUpon>FRM_EXP_LEDGER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_EXP_REVUN.resx">
+      <DependentUpon>FRM_EXP_REVUN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_LOGINS.resx">
+      <DependentUpon>FRM_LOGINS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_MAIN.resx">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_NATIONALITY.resx">
+      <DependentUpon>FRM_NATIONALITY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_PAID_CREDIT.resx">
+      <DependentUpon>FRM_PAID_CREDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_POLICE.resx">
+      <DependentUpon>FRM_POLICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SEFAT.resx">
+      <DependentUpon>FRM_SEFAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SELECT_COURT.resx">
+      <DependentUpon>FRM_SELECT_COURT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SELECT_CUSTOMER.resx">
+      <DependentUpon>FRM_SELECT_CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SELECT_TAWKEL.resx">
+      <DependentUpon>FRM_SELECT_TAWKEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_TAWKELTYPE.resx">
+      <DependentUpon>FRM_TAWKELTYPE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chrysanthemum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hydrangeas.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
