@@ -67,6 +67,12 @@
     <Compile Include="PL\FRM_ADMINS.Designer.cs">
       <DependentUpon>FRM_ADMINS.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_ADMINS_ROLES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ADMINS_ROLES.Designer.cs">
+      <DependentUpon>FRM_ADMINS_ROLES.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_ADMINS_TRACKING.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\FRM_ADMINS.resx">
       <DependentUpon>FRM_ADMINS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ADMINS_ROLES.resx">
+      <DependentUpon>FRM_ADMINS_ROLES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_ADMINS_TRACKING.resx">
       <DependentUpon>FRM_ADMINS_TRACKING.cs</DependentUpon>
